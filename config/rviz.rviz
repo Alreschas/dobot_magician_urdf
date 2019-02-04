@@ -12,7 +12,6 @@ Panels:
         - /RobotModel1/Links1/magician_link_41
         - /RobotModel1/Links1/magician_link_base1
         - /RobotModel1/Links1/root1
-        - /RobotModel1/Links1/world1
         - /TF1
         - /TF1/Frames1
       Splitter Ratio: 0.5
@@ -69,6 +68,11 @@ Visualization Manager:
         Expand Link Details: true
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
+        magician_end_effector:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         magician_link_1:
           Alpha: 1
           Show Axes: false
@@ -89,17 +93,17 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        magician_link_5:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         magician_link_base:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         root:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        world:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -114,6 +118,8 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: true
+        magician_end_effector:
+          Value: true
         magician_link_1:
           Value: true
         magician_link_2:
@@ -122,26 +128,27 @@ Visualization Manager:
           Value: true
         magician_link_4:
           Value: true
+        magician_link_5:
+          Value: true
         magician_link_base:
           Value: true
         root:
           Value: true
-        world:
-          Value: true
-      Marker Scale: 0.30000001192092896
+      Marker Scale: 0.20000000298023224
       Name: TF
       Show Arrows: true
       Show Axes: true
       Show Names: true
       Tree:
-        world:
-          root:
-            magician_link_base:
-              magician_link_1:
-                magician_link_2:
-                  magician_link_3:
-                    magician_link_4:
-                      {}
+        root:
+          magician_link_base:
+            magician_link_1:
+              magician_link_2:
+                magician_link_3:
+                  magician_link_4:
+                    magician_link_5:
+                      magician_end_effector:
+                        {}
       Update Interval: 0
       Value: true
   Enabled: true
@@ -184,10 +191,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.4153987467288971
+      Pitch: 0.3853965103626251
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 0.6603974103927612
+      Yaw: 0.7453950047492981
     Saved: ~
 Window Geometry:
   Displays:
